@@ -12,8 +12,8 @@ public class Car {
 		this.brand = brand;
 		
 	}
-	
-	public String tostring() {
-		return "brand" + brand + "price" +price + "model" + model;
+	@Override
+	public String toString() {
+		return "brand " + brand + "price " +price + "model " + model;
 	}
 }
