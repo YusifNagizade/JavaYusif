@@ -6,9 +6,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="yeni"/>
-	<classpathentry kind="src" path="sent20"/>
-	<classpathentry kind="src" path="sinifisi"/>
-	<classpathentry kind="src" path="sent28"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
