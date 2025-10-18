@@ -6,8 +6,8 @@ public class Main {
 		HelloThread thread1 = new HelloThread();
         WorldThread thread2 = new WorldThread();
         
-        thread1.run();
-        thread2.run();
+        thread1.start();
+        thread2.start();
 
 	}
 
