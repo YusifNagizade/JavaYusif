@@ -7,15 +7,19 @@ public class User {
 	String name;
 	LocalDate birth;
 	
-	public User(String name,LocalDate birth) {
+	public User(String name,LocalDate birth) throws UnderAgeException {
 		this.name = name;
 		this.birth = birth;
+		
+		int age = Period.between(birth, LocalDate.now()).getYears();
+		
+		if (age < 18) {
+	        throw new UnderAgeException ("yas kicikdir!");
+	    }
 	}
 	
-	int age = Period.between(birth, LocalDate.now()).getYears()
 	
 	
-	if (age < 18) {
-        throw new UnderAgeException ("yas kicikdir!");
-    }
+	
+	
 }
